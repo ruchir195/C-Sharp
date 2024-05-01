@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<label>Total Student: </label>
+
+
+@foreach (var student in ViewBag.totalStudetns)
+ {
+       <div>
+            @student.StudentId -  @student.StudentName - @student.Age;
+       </div>
+ }
+
+<p>
+    @Html.ActionLink("Create Link", "index")
+</p>
+
